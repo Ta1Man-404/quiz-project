@@ -1,6 +1,6 @@
 gulpfile.js
-/.idea
+.idea/
 package.json
 package-lock.json
-/node_modules
-/scss
+node_modules/
+scss/
