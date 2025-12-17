@@ -1,0 +1,102 @@
+.correctAnswers {
+  padding-top: 20px;
+  padding-bottom: 140px;
+
+  .container {
+    position: relative;
+
+    .pre-title {
+      font-size: 20px;
+      color: #DCDCF3;
+      margin-bottom: 60px;
+
+      svg {
+        margin: 0 15px;
+      }
+
+      #test-title {
+        color: #6933DC;
+      }
+    }
+
+    .title {
+      color: #333;
+      margin-bottom: 10px;
+
+      span {
+        color: #6933DC;
+      }
+    }
+
+    .completeBy {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 60px;
+
+      #completeBy {
+        color: #6933DC;
+        font-family: "Museo Bold", sans-serif;
+      }
+    }
+
+    .correctAnswers-question {
+      margin-bottom: 60px;
+
+      #title {
+        color: #333;
+        font-family: "Museo Bold", sans-serif;
+        font-size: 36px;
+        margin-bottom: 40px;
+
+        span {
+          color: #6933DC;
+        }
+      }
+    }
+
+    #options {
+      .correctAnswers-option {
+        .option-group {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          line-height: 1;
+          color: #333;
+          font-size: 20px;
+
+          input[type="radio"].option-answer {
+            margin-right: 13px;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid #6933DC;
+            display: grid;
+            place-content: center;
+          }
+        }
+
+        .option-group.correct {
+          color: #5FDC33;
+
+          input[type="radio"].option-answer {
+            border: 6px solid #5FDC33;
+          }
+        }
+
+        .option-group.wrong {
+          color: #DC3333;
+
+          input[type="radio"].option-answer {
+            border: 6px solid #DC3333;
+          }
+        }
+      }
+    }
+
+    .last-btn {
+      bottom: -144px;
+    }
+  }
+}

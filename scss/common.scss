@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url("../../static/fonts/MuseoSansCyrl-500.ttf");
+  font-family: 'Museo';
+}
+
+@font-face {
+  src: url("../../static/fonts/MuseoSansCyrl-700.ttf");
+  font-family: 'Museo Bold';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Museo, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.big-title {
+  font-family: Museo Bold, sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.btn {
+  padding: 14px 35px;
+  background: #6933DC;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFF;
+  border: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    background: #32098a;
+  }
+
+  &:disabled {
+    background: #e2dfe7;
+    cursor: not-allowed;
+  }
+}
+
+a.btn {
+  display: inline-block;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #6933DC;
+  border: 1px solid #6933DC;
+
+  &:hover {
+    background: #6933DC;
+    color: #fff;
+  }
+
+  &:disabled {
+    background: transparent;
+    color: #e2dfe7;
+    border: 1px solid #e2dfe7;
+    cursor: not-allowed;
+  }
+}
+
+header {
+  padding: 42px 0 40px;
+  border-bottom: 1px solid #DCDCF3;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: #DCDCF3;
+}
+
+a {
+  color: #6933DC;
+}
+
+.common-title {
+  font-family: 'Museo Bold', sans-serif;
+  font-size: 46px;
+  line-height: 58px;
+
+  color: #333;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.last-btn {
+  position: absolute;
+  font-size: 17px;
+  text-decoration: none;
+  bottom: -127px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: #6933DC;
+  cursor: pointer;
+
+  svg {
+    position: relative;
+    margin-left: 13px;
+  }
+}
